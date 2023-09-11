@@ -11,10 +11,19 @@
       <li class="nav-item dropdown">
         <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
         <ul class="dropdown-menu">
-          <li><a class="nav-link" href="index-0.html">General Dashboard</a></li>
-          <li><a class="nav-link" href="index.html">Ecommerce Dashboard</a></li>
+          <li>
+            <a class="nav-link" href="index-0.html">General Dashboard</a>
+          </li>
+          <li>
+            <a class="nav-link" href="index.html">Ecommerce Dashboard</a>
+          </li>
         </ul>
       </li>
+      @can('index-user')
+      <li class="nav-item dropdown">
+        <a href="{{ route('user.index') }}" class="nav-link"><i class="fas fa-users"></i><span>User List</span></a>
+      </li>           
+      @endcan   
     @show
   </ul>
 

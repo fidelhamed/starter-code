@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,4 +26,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('profile', function () {
         return view('dashboard.profile');
     })->name('profile');
+
+    Route::resource('user', UserController::class);
 });
