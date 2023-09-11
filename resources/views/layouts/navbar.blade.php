@@ -16,6 +16,10 @@
         <a href="{{ route('profile') }}" class="dropdown-item has-icon">
           <i class="far fa-user"></i> Profile
         </a>
+        {{-- <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item has-icon">
+          <i class="fas fa-lock"></i> Change Password
+        </a> --}}
         <div class="dropdown-divider"></div>
         <a href="#" class="dropdown-item has-icon text-danger" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
           <i class="fas fa-sign-out-alt"></i> Logout
